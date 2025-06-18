@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="js/profile.js"></script>
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Profile</h2>
+    <p>Currently editing profile for: <span id="usernameDisplay"></span></p>
+    <div class="mb-3">
+        <input type="text" id="age" class="form-control" placeholder="Age">
+    </div>
+    <div class="mb-3">
+        <input type="date" id="dob" class="form-control" placeholder="Date of Birth">
+    </div>
+    <div class="mb-3">
+        <input type="text" id="contact" class="form-control" placeholder="Contact">
+    </div>
+    <button id="updateBtn" class="btn btn-success">Update Profile</button>
+    <button id="logoutBtn" class="btn btn-danger">Logout</button>
+</div>
+
+<div id="profileSummary" class="alert alert-info mt-3" style="display:none;">
+    <strong>Your Profile:</strong>
+    <div>Age: <span id="summaryAge"></span></div>
+    <div>Date of Birth: <span id="summaryDob"></span></div>
+    <div>Contact: <span id="summaryContact"></span></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>
